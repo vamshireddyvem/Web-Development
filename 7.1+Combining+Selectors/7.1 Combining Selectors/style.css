@@ -1,0 +1,22 @@
+/* Write your code here: */
+/* grouping */
+h1, h2{  
+    color: blueviolet;
+}
+/* parent child */
+.box>p{
+    color:firebrick
+}
+/* descendent */
+.box .list{
+    color: blue;
+}
+/* chaining */
+li.done{
+    color: seagreen;
+}
+/* combination of combiners */
+ul p.done{
+    font-size: 0.5rem;
+    color:turquoise
+}

@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "name": "http://127.0.0.1:3000/6.3+CSS+Box+Model/6.3%20CSS%20Box%20Model/index.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/6.3+CSS+Box+Model/6.3%20CSS%20Box%20Model/index.html"
+        }
+    ]
+}

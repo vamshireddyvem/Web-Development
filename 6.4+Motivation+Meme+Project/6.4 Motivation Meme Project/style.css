@@ -1,0 +1,26 @@
+*{
+    background: rgb(0, 0, 0);
+}
+div{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+}
+h1{
+    font-family:"Libre Baskerville", serif;
+    font-style: italic;
+    color:aquamarine;
+    text-align: center;
+    text-transform: capitalize;
+}
+img{
+    width: 100%;
+    border: 5px solid white;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: beige;
+    text-align: center;
+
+}

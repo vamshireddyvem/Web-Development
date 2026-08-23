@@ -1,0 +1,179 @@
+/* ==========================================================================
+   Form Layouts (create.ejs & edit.ejs)
+   ========================================================================== */
+
+/* Card container for form pages */
+.form-card {
+  background-color: var(--card-bg, #ffffff);
+  border-radius: var(--radius, 8px);
+  padding: 2rem;
+  box-shadow: var(--shadow, 0 4px 6px -1px rgba(0, 0, 0, 0.1));
+  max-width: 650px;
+  margin: 2rem auto;
+}
+
+.form-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color, #e9ecef);
+  padding-bottom: 0.75rem;
+}
+
+/* Individual form fields */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-main, #212529);
+}
+
+/* Input & Textarea styling */
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid var(--border-color, #ced4da);
+  border-radius: var(--radius, 6px);
+  background-color: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary, #4f46e5);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+textarea.form-control {
+  min-height: 180px;
+  resize: vertical;
+}
+
+/* Form action button container */
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+
+
+
+/* Mobile responsive layout */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 1.25rem;
+    margin: 1rem auto;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button,
+  .form-actions a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.form-group-inline {
+  display: flex;
+  align-items: center; /* Vertically aligns label and input */
+  gap: 1rem;            /* Space between label and input */
+  margin-bottom: 1rem;
+}
+
+/* Label styling */
+.form-group-inline label {
+  font-weight: 600;
+  white-space: nowrap; /* Keeps label text on a single line */
+  min-width: 80px;     /* Ensures alignment if you have multiple inline rows */
+}
+
+/* Input takes up all remaining horizontal space */
+.form-group-inline .form-control {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Mobile responsive layout: stacks them on smaller screens */
+@media (max-width: 480px) {
+  .form-group-inline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+  
+  .form-group-inline .form-control {
+    width: 100%;
+  }
+}
+
+/* Container to keep them side-by-side */
+.form-buttons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1.5rem;
+  justify-content: center; /* Aligns buttons to the left */
+}
+
+/* Base button styling - shared by BOTH <button> and <a> */
+.btn {
+  /* Fix height inconsistencies */
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Explicit line-height prevents <a> and <button> font size discrepancies */
+  font-size: 0.95rem;
+  line-height: 1;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  font-family: inherit;
+  
+  /* Reset defaults */
+  border: 1px solid transparent; /* Keeps identical dimensions even if borders are used */
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Submit Button (Primary) */
+.btn-submit {
+  background-color: #089905;
+  color: #ffffff;
+}
+
+.btn-submit:hover {
+  background-color: #19b533;
+}
+
+/* Red Cancel Link (Danger) */
+.btn-cancel {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.btn-cancel:hover {
+  background-color: #b91c1c;
+}

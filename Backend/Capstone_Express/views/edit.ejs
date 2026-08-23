@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Post</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/form.css">
+</head>
+<body>
+  <h1>Edit Post</h1>
+
+  <form class="form-group-inline" action="/update-post/<%= post.id %>" method="POST">
+    <div>
+      <label class="form-label" for="title">Title:</label><br>
+      <input type="text" id="post-title" name="title" class="form-control" placeholder="Enter post title" required value="<%= post.title %>" required>
+    </div>
+    <br>
+    <div>
+      <label class="form-label" for="content">Content:</label><br>
+      <textarea id="content" name="content" class="form-control" placeholder="Enter post content" rows="6" cols="40" required><%= post.content %></textarea>
+    </div>
+    <br>
+    <div class="form-buttons">
+        <button class="btn btn-submit" type="submit">Submit Post</button>
+        <a href="/" class="btn btn-cancel">Cancel</a>
+    </div>
+    
+  </form>
+
+  <br>
+  <!-- <a href="/">Cancel</a> -->
+</body>
+</html>

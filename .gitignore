@@ -1,2 +1,26 @@
+# Nested repos / submodules
 Javascript/diceGame
 Rainbow_Clouds/rainbowclouds_web
+
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+coverage/
